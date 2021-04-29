@@ -68,7 +68,7 @@ const TextStatItem = ({title}) =>{
 
     return(
         <div className={classes.textStatItem}>
-            <div className={classes.chosen}>(utvalda svar)</div>
+            <div className={classes.chosen}>(selected answers)</div>
             
             {getTextCards(title)}
         </div>
