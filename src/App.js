@@ -1,8 +1,8 @@
-import "./App.css";
-import EvaluationForm from "./Components/EvaluationForm";
-import Sidebar from "./Components/Environment/Sidebar";
-import SideMenu from "./Components/Environment/SideMenu";
 import { createUseStyles } from "react-jss";
+import "./App.css";
+import Sidebar from "./Old Evaluation/Environment/Sidebar";
+import SideMenu from "./Old Evaluation/Environment/SideMenu";
+import OldCourseEval from "./Old Evaluation/OldCourseEval";
 import { useMediaQuery } from "react-responsive";
 
 const useStyles = createUseStyles({
@@ -26,8 +26,12 @@ const useStyles = createUseStyles({
     display: "flex",
     flexDirection: "row",
   },
+  spaceHolderBar: {
+    minWidth: 100,
+    visibility: "hidden",
+  },
   spaceHolderMenu: {
-    minWidth: 125,
+    minWidth: 115,
     visibility: "hidden",
   },
 });
@@ -38,15 +42,16 @@ function App() {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-device-width: 1224px)",
   });
+
   return (
     <div className="App">
       {isDesktopOrLaptop && (
         <div className={classes.container}>
+          <div className={classes.spaceHolderBar}></div>
+          <div className={classes.spaceHolderMenu}></div>
           <Sidebar />
           <SideMenu />
-          <div className={classes.spaceHolderMenu} />
-          <EvaluationForm useCarousel={true} />
-          <div className={classes.spaceHolderMenu} />
+          <OldCourseEval />
         </div>
       )}
       {!isDesktopOrLaptop && (

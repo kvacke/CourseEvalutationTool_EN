@@ -11,64 +11,64 @@ import { v4 as uuidv4 } from 'uuid';
 
 const hurNöjd =
 [
-    "Very dissatisfied", "Somewhat dissatisfied", "Neither satisfied nor dissatisfied", "Somewhat satisfied", "Very satisfied"
+    "Mycket missnöjd", "Ganska missnöjd", "Varken nöjd eller missnöjd", "Ganska nöjd", "Mycket nöjd"
 ]
 
 const grader =
 [
-    "Not at all", "To a low degree", "To some degree", "To a high degree", "To a very high degree"
+    "Inte alls", "I låg grad", "I viss grad", "I hög grad", "I mycket hög grad"
 ]
 
 const wordList = [
-    'stimulating',
-    'problem solving',
-    'analysing',
-    'subject specialization',
-    'intellectually challenging',
-    'boring',
-    'effective',
-    'unnecessary',
-    'aha-moment',
-    'memorization oriented',
-    'engaging',
-    'too hard',
-    'too easy',
-    'interesting',
-    'unfocused',
-    'heavy',
-    'practical application',
-    'ineffective',
-    'useful'
+    'stimulerande',
+    'problemlösning',
+    'analyserande',
+    'ämnesfördjupning',
+    'intellektuellt utmanande',
+    'tråkig',
+    'effektiv',
+    'onödig',
+    'aha-upplevelse',
+    'utantill-kunskap',
+    'engagerande',
+    'för svår',
+    'för lätt',
+    'intressant',
+    'spretig',
+    'tung',
+    'praktisk tillämpning',
+    'ineffektiv',
+    'nyttig'
 ]
 
 const wordList2 = [
-    {word :'stimulating', selected: false},
-    {word :'problem solving', selected: false},
-    {word :'analysing', selected: false},
-    {word :'subject specialization', selected: false},
-    {word :'intellectually challenging', selected: false},
-    {word :'boring', selected: false},
-    {word :'effective', selected: false},
-    {word :'unnecessary', selected: false},
-    {word :'aha-moment', selected: false},
-    {word :'memorization oriented', selected: false},
-    {word :'engaging', selected: false},
-    {word :'too hard', selected: false},
-    {word :'too easy', selected: false},
-    {word :'interesting', selected: false},
-    {word :'unfocused', selected: false},
-    {word :'heavy', selected: false},
-    {word :'practical application', selected: false},
-    {word :'ineffective', selected: false},
-    {word :'useful', selected: false},
+    {word :'stimulerande', selected: false},
+    {word :'problemlösning', selected: false},
+    {word :'analyserande', selected: false},
+    {word :'ämnesfördjupning', selected: false},
+    {word :'intellektuellt utmanande', selected: false},
+    {word :'tråkig', selected: false},
+    {word :'effektiv', selected: false},
+    {word :'onödig', selected: false},
+    {word :'aha-upplevelse', selected: false},
+    {word :'utantill-kunskap', selected: false},
+    {word :'engagerande', selected: false},
+    {word :'för svår', selected: false},
+    {word :'för lätt', selected: false},
+    {word :'intressant', selected: false},
+    {word :'spretig', selected: false},
+    {word :'tung', selected: false},
+    {word :'praktisk tillämpning', selected: false},
+    {word :'ineffektiv', selected: false},
+    {word :'nyttig', selected: false},
 ]
 
 let agreeOptions = [
-    "Disagree completely",
-    "Disagree somewhat",
-    "Neutral",
-    "Agree somewhat",
-    "Agree strongly"
+    "Instämmer inte alls",
+    "Instämmer i låg grad",
+    "Instämmer i viss grad",
+    "Instämmer i hög grad",
+    "Instämmer helt"
 ]
 
 
@@ -79,36 +79,36 @@ let page0 = [
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'How satisfied are you with the course in general?',
+        title:'Hur nöjd är du med kursen i stort?',
         options: hurNöjd,
-        category:'General'
+        category:'Kursen i stort'
     },
     {
         id : uuidv4(),
         inputType:'words',////////////////////////////////////////////
         value : wordList2,
         disabled : false,
-        title:'Summarize your main impression of the course by marking the words that best describe the course for you.',
+        title:'Sammanfatta ditt huvudintryck av kursen genom att markera de ord som bäst beskriver kursen för dig',
         options: wordList,
-        category:'General'
+        category:'Kursen i stort'
     },
     {
         id : uuidv4(),
         inputType:'textAnswer',
         value : undefined,
         disabled : false,
-        title:'This was especially good with the course:',
+        title:'Det här var särskilt bra med kursen:',
         options: agreeOptions,
-        category:'General'
+        category:'Kursen i stort'
     },
     {
         id : uuidv4(),
         inputType:'textAnswer',
         value : undefined,
         disabled : false,
-        title:'The course can be improved in the following ways:',
+        title:'Det här kan förbättras med kursen:',
         options: agreeOptions,
-        category:'General'
+        category:'Kursen i stort'
     },
 
 ]
@@ -118,27 +118,27 @@ let page1 = [
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'The administration during the course (schedule, exam registrations, etc.) has worked well.',
+        title:'Administrationen under kursen (schema, tentamensanmälen etc) har fungerat väl.',
         options: agreeOptions,
-        category:'Preconditions'
+        category:'Förutsättningar'
     },
     {
         id : uuidv4(),
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'I have generally known what is expected of me in this course in relation to the course objectives.',
+        title:'Jag har överlag vetat vad som förväntas av mig i den här kursen i relation till kursmålen',
         options: agreeOptions,
-        category:'Preconditions'
+        category:'Förutsättningar'
     },
     {
         id : uuidv4(),
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'To what extent have you had difficulty following the course due to lack of prior knowledge?',
+        title:'I vilken grad har du haft svårigheter att följa med i kursen på grund av bristande förkunskaper?',
         options: grader,
-        category:'Preconditions'
+        category:'Under kursen'
     },
 ]
 let page2 = [
@@ -148,36 +148,36 @@ let page2 = [
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:"I believe that the course's requirement for work effort corresponds to the number of course credits.",
+        title:'Jag anser att kursens krav på arbetsinsats motsvarar antalet kurspoäng',
         options: agreeOptions,
-        category:'During the course'
+        category:'Under kursen'
     },
     {
         id : uuidv4(),
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'The studies on the course have been intellectually challenging.',
+        title:'Studierna på kursen har varit intellektuellt utmananade',
         options: agreeOptions,
-        category:'During the course'
+        category:'Under kursen'
     },
     {
         id : uuidv4(),
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'The teacher(s) have been good at explaining course content that has been difficult to understand in the course.',
+        title:'Läraren/-na har varit bra på att förklara kursinnehåll som varit svårt att förstå i kursen',
         options: grader,
-        category:'During the course'
+        category:'Under kursen'
     },
     {
         id : uuidv4(),
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'How satisfied are you with your own work effort on the course?',
+        title:'Hur nöjd är du med din egen arbetsinsats på kursen?',
         options: hurNöjd,
-        category:'During the course'
+        category:'Under kursen'
     },
 
 ]
@@ -187,27 +187,27 @@ let page3 = [
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'To what extent have the studies within the course contributed to developing your ability to read and understand academic writing?',
+        title:'I vilken grad har studierna inom kursen bidragit till att utveckla din förmåga gällande att läsa och förstå vetenskapliga texter?',
         options: grader,
-        category:'Results'
+        category:'Resultat'
     },
     {
         id : uuidv4(),
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'To what extent have the studies within the course contributed to developing your ability to work in groups / collaborate with others?',
+        title:'I vilken grad har studierna inom kursen bidragit till att utveckla din förmåga gällande att arbeta i grupp/samarbeta med andra?',
         options: grader,
-        category:'Results'
+        category:'Resultat'
     },
     {
         id : uuidv4(),
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'To what extent has the course built on what you have previously learned in the subject?',
+        title:'I vilken grad har kursen byggt vidare på det du tidigare har lärt dig i ämnet?',
         options: grader,
-        category:'Results'
+        category:'Resultat'
     },
 
 ]

@@ -18,6 +18,8 @@ const useStyles = createUseStyles({
         userSelect:'none',
         color:'#575757'
     },
+
+
     icon:{
         fontSize:'25px'
     },
@@ -34,8 +36,11 @@ const useStyles = createUseStyles({
         },
         cursor:'pointer'
     },
+
+
     logo:{
         fontSize:'27px',
+        //color:'rgb(153,0,0)'
         color:'grey'
     },
     logoContainer:{
@@ -67,16 +72,16 @@ const Sidebar = () => {
     return(
         <div className={classes.sidebar}>
             <Logo/>
-            <SidebarItem icon={faUserCircle} title="Account"/>
-            <SidebarItem icon={faTachometerAlt} title="Dashboard"/>
-            <SidebarItem isSelected={true} icon={faBook} title="Courses"/>
-            <SidebarItem icon={faUserFriends} title="Groups"/>
+            <SidebarItem icon={faUserCircle} title="Konto"/>
+            <SidebarItem icon={faTachometerAlt} title="Översikt"/>
+            <SidebarItem isSelected={true} icon={faBook} title="Kurser"/>
+            <SidebarItem icon={faUserFriends} title="Grupper"/>
 
-            <SidebarItem icon={faCalendarAlt} title="Calendar"/>
-            <SidebarItem icon={faInbox} title="Inbox"/>
-            <SidebarItem icon={faClock} title="History"/>
+            <SidebarItem icon={faCalendarAlt} title="Kalender"/>
+            <SidebarItem icon={faInbox} title="Inkorg"/>
+            <SidebarItem icon={faClock} title="Historik"/>
             <SidebarItem icon={faTv} title="Studio"/>
-            <SidebarItem icon={faQuestionCircle} title="Help"/>
+            <SidebarItem icon={faQuestionCircle} title="Hjälp"/>
 
         </div>
     )
