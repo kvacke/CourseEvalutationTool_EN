@@ -73,9 +73,9 @@ const OldCourseEval = (props) => {
   content.push(
     <div className={pageNumber === 0 ? classes.shown : classes.hidden}>
       <div className={classes.description}>
-        Du kan fylla i och ändra dina svar i kursvärderingen t.o.m. 2021-05-11
-        23:59. Det är de senast sparade svaren som ligger till grund för
-        kursvärderingen.
+        You can enter and change your answers until 2021-05-11
+        23:59. It is the most recently saved answers that form the basis for
+        the course valuation.
         <br />
         <br />
         Your views are valuable, and both positive and
@@ -101,25 +101,25 @@ const OldCourseEval = (props) => {
           "Summarize your main impression of the course by marking the words that best describe the course for you."
         }
         words={[
-          "stimulerande",
-          "problemlösning",
-          "analyserande",
-          "ämnesfördjupning",
-          "intellektuellt utmanande",
-          "tråkig",
-          "effektiv",
-          "onödig",
-          "aha-upplevelse",
-          "utantill-kunskap",
-          "engagerande",
-          "för svår",
-          "för lätt",
-          "intressant",
-          "spretig",
-          "tung",
-          "praktisk tillämpning",
-          "ineffektiv",
-          "nyttig",
+          'stimulating',
+          'problem solving',
+          'analysing',
+          'subject specialization',
+          'intellectually challenging',
+          'boring',
+          'effective',
+          'unnecessary',
+          'aha-moment',
+          'memorization oriented',
+          'engaging',
+          'too hard',
+          'too easy',
+          'interesting',
+          'unfocused',
+          'heavy',
+          'practical application',
+          'ineffective',
+          'useful'
         ]}
         comment={true}
       />
@@ -286,7 +286,7 @@ const OldCourseEval = (props) => {
           setShowSurveyLink(true);
         }}
       >
-        Spara svar
+        Submit
       </button>
       {showSurveryLink ? (
         <div>
@@ -312,13 +312,13 @@ const OldCourseEval = (props) => {
     <div
       className={pageNumber === 1 ? classes.resultContainer : classes.hidden}
     >
-      <h3 className={classes.resultTitle}>Resultat</h3>
+      <h3 className={classes.resultTitle}>Results</h3>
       <div>
-        <i>Den här kursvärderingen har besvarats av 22% (12/54) studenterna.</i>
+        <i>This course evaluation has been answered by 22% (12/54) of students.</i>
         <br />
         <p className={classes.responseRate}>
-          Resultaten blir tillgängliga först efter att kursvärderingen avslutats
-          och svaren gåtts igenom, summerats och publicerats.
+        The results will only be available after the course evaluation has been completed
+          and the answers were reviewed, summarized and published.
         </p>
       </div>
     </div>
@@ -328,14 +328,14 @@ const OldCourseEval = (props) => {
     <div
       className={pageNumber === 2 ? classes.resultContainer : classes.hidden}
     >
-      <h3 className={classes.resultTitle}>Kursrapport</h3>
-      <p>Kursrapporten är inte färdigställd</p>
+      <h3 className={classes.resultTitle}>Course report</h3>
+      <p>The course report is not completed</p>
     </div>
   );
 
   return (
     <div className={classes.container}>
-      <h2 className={classes.h2}>KURSVÄRDERING</h2>
+      <h2 className={classes.h2}>COURSE EVALUATION</h2>
       <PageTab pageNumber={pageNumber} setPageNumber={setPageNumber} />
       {content[0]}
       {content[1]}

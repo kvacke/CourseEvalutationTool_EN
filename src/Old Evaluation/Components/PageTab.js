@@ -29,9 +29,9 @@ const PageTab = ({ pageNumber, setPageNumber }) => {
     const classes = useStyles();
     return (
         <div className={classes.container}>
-            <a onClick={() => setPageNumber(0)} className={pageNumber === 0 ? classes.selected : classes.notSelected}>Kursvärdering</a> | 
-            <a onClick={() => setPageNumber(1)} className={pageNumber === 1 ? classes.selected : classes.notSelected}>Resultat</a> | 
-            <a onClick={() => setPageNumber(2)} className={pageNumber === 2 ? classes.selected : classes.notSelected}>Kursrapport</a>
+            <a onClick={() => setPageNumber(0)} className={pageNumber === 0 ? classes.selected : classes.notSelected}>Course evaluation</a> | 
+            <a onClick={() => setPageNumber(1)} className={pageNumber === 1 ? classes.selected : classes.notSelected}>Results</a> | 
+            <a onClick={() => setPageNumber(2)} className={pageNumber === 2 ? classes.selected : classes.notSelected}>Course report</a>
         </div>
     );
 }

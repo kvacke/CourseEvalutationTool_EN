@@ -92,7 +92,7 @@ const RadioButtonQuestion = ({ number, question, alternatives, arrows, comment }
             })}
             {greenArrow}
             <div className={classes.vetEj}><input type="radio" name={number}/>
-                <p className={classes.vetEjText}>Vet ej/ej aktuell/vill ej svara </p></div>
+                <p className={classes.vetEjText}>Don't know/Not relevant/Do not wish to answer </p></div>
             </div>
             {comment ? <Comment value={commentValue} setValue={setCommentValue}/> : null}
         </div>

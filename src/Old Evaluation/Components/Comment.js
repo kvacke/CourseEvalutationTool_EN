@@ -45,7 +45,7 @@ const Comment = ( {value, setValue} ) => {
     return (
         <div>
             <div className={classes.writeComment} onClick={() => setShowComment(!showComment)}>
-                <img src={"https://i.postimg.cc/YSBmKf9y/comment-image.png"} height={19} width={19}/>Skriv en kommentar
+                <img src={"https://i.postimg.cc/YSBmKf9y/comment-image.png"} height={19} width={19}/>Add a comment
             </div>
             <div className={showComment ? classes.commentContainerOpened : classes.commentContainer}>
                 <textarea className={classes.textArea} value={text} onChange={handleTextChange}/>
