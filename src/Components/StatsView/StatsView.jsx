@@ -45,8 +45,8 @@ const StatsView = ({formData}) => {
 
                 <div className={classes.subTitle}>
                 Here, the answers from this course's ongoing course evaluation are continuously updated.
-                In each diagram below, you can see how the course participants have responded so far and with your answers marked in blue.
-                Feel free to come back when the course evaluation is completed to see the final result.
+                In each diagram below, you can see how the course participants have responded so far, with your answers marked in blue.
+                You can come back when the course evaluation is completed to see the final result.
                 </div>
                 {formData[0].map((item)=>{
                     count++;
@@ -68,7 +68,7 @@ const StatsView = ({formData}) => {
                     })}
             <div className={classes.bottomInfo}>
                  
-            You have now reached the end of the test environment.<br/> When you're done exploring
+            You have now reached the end of the tool.<br/> When you're done exploring
                 we ask you to evaluate this tool with the survey "AttrakDiff" by  <a href="https://esurvey.uid.com/survey/#5a3ad5a4-4760-4796-91b5-4231a60bbbaf">clicking here.</a>
                   {" "}(Switch from German to English in the top right corner after clicking the link!)
                 </div>

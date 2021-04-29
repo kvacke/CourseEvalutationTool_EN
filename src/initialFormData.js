@@ -64,11 +64,11 @@ const wordList2 = [
 ]
 
 let agreeOptions = [
-    "Disagree completely",
-    "Disagree somewhat",
+    "Strongly disagree",
+    "Somewhat disagree",
     "Neutral",
-    "Agree somewhat",
-    "Agree strongly"
+    "Somewhat agree",
+    "Strongly agree"
 ]
 
 
@@ -157,7 +157,7 @@ let page2 = [
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'The studies on the course have been intellectually challenging.',
+        title:'This course have been intellectually challenging.',
         options: agreeOptions,
         category:'During the course'
     },
@@ -175,7 +175,7 @@ let page2 = [
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'How satisfied are you with your own work effort on the course?',
+        title:'How satisfied are you with your own work effort in the course?',
         options: hurNöjd,
         category:'During the course'
     },
@@ -187,7 +187,7 @@ let page3 = [
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'To what extent have the studies within the course contributed to developing your ability to read and understand academic writing?',
+        title:'To what extent has this course contributed to developing your ability to read and understand academic writing?',
         options: grader,
         category:'Results'
     },
@@ -196,7 +196,7 @@ let page3 = [
         inputType:'ordinalScaleInput',
         value : undefined,
         disabled : false,
-        title:'To what extent have the studies within the course contributed to developing your ability to work in groups / collaborate with others?',
+        title:'To what extent has this course contributed to developing your ability to work in groups / collaborate with others?',
         options: grader,
         category:'Results'
     },
