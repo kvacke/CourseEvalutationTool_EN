@@ -98,7 +98,7 @@ const OldCourseEval = (props) => {
       <MultipleChoiceQuestion
         number={2}
         question={
-          "Sammanfatta ditt huvudintryck av kursen genom att markera de ord som bäst beskriver kursen för dig"
+          "Summarize your main impression of the course by marking the words that best describe the course for you."
         }
         words={[
           "stimulerande",
@@ -125,23 +125,23 @@ const OldCourseEval = (props) => {
       />
       <TextAreaQuestion
         number={3}
-        question={"Det här var särskilt bra med kursen:"}
+        question={"This was especially good with the course:"}
       />
       <TextAreaQuestion
         number={4}
-        question={"Det här kan förbättras med kursen:"}
+        question={"The course can be improved in the following ways:"}
       />
       <RadioButtonQuestion
         number={5}
         question={
-          "Administrationen under kursen (schema, tentamensanmälen etc) har fungerat väl."
+          "The administration during the course (schedule, exam registrations, etc.) has worked well."
         }
         alternatives={[
-          "Instämmer Not at all",
-          "Instämmer To a low degree",
-          "Instämmer To some degree",
-          "Instämmer To a high degree",
-          "Instämmer helt",
+          "Not at all",
+          "To a low degree",
+          "To some degree",
+          "To a high degree",
+          "To a very high degree",
         ]}
         arrows={true}
         comment={true}
@@ -149,14 +149,14 @@ const OldCourseEval = (props) => {
       <RadioButtonQuestion
         number={6}
         question={
-          "Jag har överlag vetat vad som förväntas av mig i den här kursen i relation till kursmålen"
+          "I have generally known what is expected of me in this course in relation to the course objectives."
         }
         alternatives={[
-          "Instämmer Not at all",
-          "Instämmer To a low degree",
-          "Instämmer To some degree",
-          "Instämmer To a high degree",
-          "Instämmer helt",
+          "Not at all",
+          "To a low degree",
+          "To some degree",
+          "To a high degree",
+          "To a very high degree",
         ]}
         arrows={true}
         comment={true}
@@ -164,7 +164,7 @@ const OldCourseEval = (props) => {
       <RadioButtonQuestion
         number={7}
         question={
-          "I vilken grad har du haft svårigheter att följa med i kursen på grund av bristande förkunskaper?"
+          "To what extent have you had difficulty following the course due to lack of prior knowledge?"
         }
         alternatives={[
           "Not at all",
@@ -179,23 +179,23 @@ const OldCourseEval = (props) => {
       <RadioButtonQuestion
         number={8}
         question={
-          "Jag anser att kursens krav på arbetsinsats motsvarar antalet kurspoäng"
+          "I believe that the course's requirement for work effort corresponds to the number of course credits."
         }
         alternatives={[
-          "Instämmer Not at all",
-          "Instämmer To a low degree",
-          "Instämmer To some degree",
-          "Instämmer To a high degree",
-          "Instämmer helt",
+          "Not at all",
+          "To a low degree",
+          "To some degree",
+          "To a high degree",
+          "To a very high degree",
         ]}
         arrows={true}
         comment={true}
       />
       <RadioButtonQuestion
         number={9}
-        question={"Studierna på kursen har varit intellektuellt utmananade"}
+        question={"This course have been intellectually challenging."}
         alternatives={[
-          "Instämmer Not at all",
+          "Not at all",
           "Instämmer To a low degree",
           "Instämmer To some degree",
           "Instämmer To a high degree",
@@ -207,7 +207,7 @@ const OldCourseEval = (props) => {
       <RadioButtonQuestion
         number={10}
         question={
-          "Läraren/-na har varit bra på att förklara kursinnehåll som varit svårt att förstå i kursen"
+          "The teacher(s) have been good at explaining course content that has been difficult to understand in the course."
         }
         alternatives={[
           "Not at all",
@@ -221,7 +221,7 @@ const OldCourseEval = (props) => {
       />
       <RadioButtonQuestion
         number={11}
-        question={"Hur nöjd är du med din egen arbetsinsats på kursen?"}
+        question={"How satisfied are you with your own work effort in the course?"}
         alternatives={[
           "Very dissatisfied",
           "Somewhat dissatisfied",
@@ -235,7 +235,7 @@ const OldCourseEval = (props) => {
       <RadioButtonQuestion
         number={12}
         question={
-          "I vilken grad har studierna inom kursen bidragit till att utveckla din förmåga gällande att läsa och förstå vetenskapliga texter?"
+          "To what extent has this course contributed to developing your ability to read and understand academic writing?"
         }
         alternatives={[
           "Not at all",
@@ -250,7 +250,7 @@ const OldCourseEval = (props) => {
       <RadioButtonQuestion
         number={13}
         question={
-          "I vilken grad har studierna inom kursen bidragit till att utveckla din förmåga gällande att arbeta i grupp/samarbeta med andra?"
+          "To what extent has this course contributed to developing your ability to work in groups / collaborate with others?"
         }
         alternatives={[
           "Not at all",
@@ -265,7 +265,7 @@ const OldCourseEval = (props) => {
       <RadioButtonQuestion
         number={14}
         question={
-          "I vilken grad har kursen byggt vidare på det du tidigare har lärt dig i ämnet?"
+          "To what extent has the course built on what you have previously learned in the subject?"
         }
         alternatives={[
           "Not at all",
@@ -281,7 +281,7 @@ const OldCourseEval = (props) => {
         className={classes.sendButton}
         onClick={() => {
           alert(
-            "Tack! Du är nu klar med interaktionen. Nu finns en länk till enkäten längst ner på sidan, tryck på den för att gå vidare!"
+            "Thanks! You are now done with the interaction. Now there is a link to the survey at the bottom of the page, click on it to proceed!"
           );
           setShowSurveyLink(true);
         }}
@@ -295,11 +295,11 @@ const OldCourseEval = (props) => {
               "https://esurvey.uid.com/survey/#42b15f72-0956-432e-b7fa-350e81f9a62c"
             }
           >
-            Tryck här för att komma till enkäten "Attrakdiff"!
+            Click here to get to the survey "Attrakdiff"!
           </a>{" "}
           <p>
-            (Byt språk till Engelska, längst upp till höger på sidan, när du
-            kommer till enkäten)
+          (Change language to English, at the top right of the page, when you
+            comes to the survey)
           </p>
         </div>
       ) : (
