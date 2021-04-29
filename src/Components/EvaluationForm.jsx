@@ -135,9 +135,9 @@ const EvaluationForm = ({useCarousel}) => {
             placement="left-start"
             title={<>
                 
-                    <div>Varje högskolepoäng som du har läst på Uppsala Universitet representeras här av en boll.
-                    Bollar i samma färg tillhör en viss kurs som du har läst.<br/><br/>
-                    Ju fler kurser du läser desto djupare blir ditt bollhav!</div>  
+                    <div>Every course credit you have studied at Uppsala University is represented here by a ball.
+                    Balls of the same color belong to a certain course that you have read.<br/><br/>
+                    The more courses you read, this ballpit will grower larger!</div>  
 
             </>}>
                 <IconButton style={{position:'absolute', top:'0px', right:'100px'}}>

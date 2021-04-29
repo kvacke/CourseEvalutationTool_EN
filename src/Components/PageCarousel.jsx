@@ -91,8 +91,8 @@ const PageCarousel = ({formData}) => {
 
             })}
             
-            <Button disableRipple onClick={()=> handleClick(false)} disabled={index<1} className={classes.text}>Föregående</Button>
-            <Button disableRipple onClick={()=> handleClick(true)} disabled={index>3} className={classes.text}>Nästa</Button>
+            <Button disableRipple onClick={()=> handleClick(false)} disabled={index<1} className={classes.text}>Previous</Button>
+            <Button disableRipple onClick={()=> handleClick(true)} disabled={index>3} className={classes.text}>Next</Button>
            
             </EvaluationPage>
 
@@ -102,24 +102,24 @@ const PageCarousel = ({formData}) => {
 
                 })}
 
-            <Button disableRipple onClick={()=> handleClick(false)} disabled={index<1} className={classes.text}>Föregående</Button>
-            <Button disableRipple onClick={()=> handleClick(true)} disabled={index>3} className={classes.text}>Nästa</Button>
+            <Button disableRipple onClick={()=> handleClick(false)} disabled={index<1} className={classes.text}>Previous</Button>
+            <Button disableRipple onClick={()=> handleClick(true)} disabled={index>3} className={classes.text}>Next</Button>
             </EvaluationPage>
             <EvaluationPage title={"Under kursen"}>
             {formData[2].map((item) =>{
                     return <GenericInput id={item.id} key={item.id} stateValue={item.value} stateDisabled={item.disabled} value={item.value} itemTitle={item.title} inputType={item.inputType} options={item.options}/>
 
                 })}
-            <Button disableRipple onClick={()=> handleClick(false)} disabled={index<1} className={classes.text}>Föregående</Button>
-            <Button disableRipple onClick={()=> handleClick(true)} disabled={index>3} className={classes.text}>Nästa</Button>
+            <Button disableRipple onClick={()=> handleClick(false)} disabled={index<1} className={classes.text}>Previous</Button>
+            <Button disableRipple onClick={()=> handleClick(true)} disabled={index>3} className={classes.text}>Next</Button>
             </EvaluationPage>
             <EvaluationPage title={"Resultat"}>
             {formData[3].map((item) =>{
                     return <GenericInput id = {item.id} key={item.id} stateValue={item.value} stateDisabled={item.disabled} value={item.value} itemTitle={item.title} inputType={item.inputType} options={item.options}/>
 
                 })}
-            <Button disableRipple onClick={()=> handleClick(false)} disabled={index<1} className={classes.text}>Föregående</Button>
-            <Button disableRipple onClick={()=> handleClick(true)} disabled={index>3} className={classes.text}>Nästa</Button>        
+            <Button disableRipple onClick={()=> handleClick(false)} disabled={index<1} className={classes.text}>Previous</Button>
+            <Button disableRipple onClick={()=> handleClick(true)} disabled={index>3} className={classes.text}>Next</Button>        
             </EvaluationPage>
             <SendPage formData={formData}/>
             </Carousel>

@@ -54,10 +54,10 @@ const ThankYou = () => {
     return(
         <div className={classes.thankYou}>
             <div  onClick={handleClick} className={classes.x}><FontAwesomeIcon  icon={faTimes}/></div>
-            <div className={classes.title}>Tack för ditt bidrag.</div>
-            <div className={classes.text}>För varje inskickad kursvärdering får vi en klarare bild av hur studenterna upplever institutionens kurser.
-                Utan dem blir det mycket svårare att veta hur kurserna kan göras bättre.
-                Tack för att du bidrar till institutionens utbildningskvalitet.</div>
+            <div className={classes.title}>Thank you for your contribution.</div>
+            <div className={classes.text}>For each submitted course evaluation, we get a clearer picture of how the students experience the department's courses.
+                Without them, it will be much harder to know how the courses can be done better.
+                Thank you for contributing to the department's quality of education.</div>
         </div>
     )
 }

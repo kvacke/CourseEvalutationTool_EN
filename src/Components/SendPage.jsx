@@ -34,6 +34,7 @@ const useStyles = createUseStyles({
     },
     description:{
         textAlign:'left',
+        width:"60%"
         
     },
     remaining:{
@@ -62,13 +63,13 @@ const StatusIndicator = ({remaining}) =>{
     return (
         <div className={classes.statusIndicator}>
             <div className={classes.statusTitle}>
-                <FontAwesomeIcon icon={done ? faCheck : faExclamationTriangle}/>{done ? ' Alla frågor är besvarade' : ' Svar saknas:'}
+                <FontAwesomeIcon icon={done ? faCheck : faExclamationTriangle}/>{done ? ' All items are answered' : ' Answers missing:'}
             </div>
             <div className={classes.remaining}>
                 <table>
                     <tbody>
                     {!done && remaining.map((item,index)=>{
-                    return <tr key={index}><td>{item.category}: </td><td>{item.count === 0 ? 'Klar' : item.count + ' svar saknas'}</td></tr>
+                    return <tr key={index}><td>{item.category}: </td><td>{item.count === 0 ? 'Done' : item.count + ' incomplete'}</td></tr>
                 })}
                     </tbody>
                 </table>
@@ -131,11 +132,6 @@ const SendPage = ({formData}) => {
 
     
 
-    const handleClick = () =>
-    {
-        alert("Här kommer formuläret att försvinna och bytas ut mot en resultatvy. Sidomenyn och bollhavet är kvar.")
-    }  
-
     React.useEffect(()=>{
         setRemaining(getRemaining(formData))
     },[formData])
@@ -143,16 +139,16 @@ const SendPage = ({formData}) => {
     return(
         <div className={classes.sendPage}>
             <div className={classes.question}>
-                Redo att skicka in?
+                Ready to submit?
             </div>
             <div className={classes.description}>
-                När du skickat in formuläret tas du till resultatvyn där du kan se de andra kursdeltagarnas svar.<br/>
-                Tänk på att du inte kommer att kunna göra ändringar i din kursvärdering efter att du skickat in.
+                Once you have submitted the form, you will be taken to the results view where you can see the other course participants' answers.
+                Keep in mind that you will not be able to make changes to your course valuation after you submit.
             </div>
             <StatusIndicator remaining={remaining}/>
             <Context.Consumer>
                 {value =>
-                <Button onClick={value.handleViewToggle} variant="contained" color="default">{done ? 'Skicka in och se resultat' : 'Avstå resten och skicka in'}</Button>
+                <Button onClick={value.handleViewToggle} variant="contained" color="default">{done ? 'Submit and view results' : 'Abstain remaining and submit'}</Button>
                 }
             </Context.Consumer>
             

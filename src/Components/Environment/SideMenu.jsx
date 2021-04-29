@@ -62,7 +62,7 @@ const SideMenuBurger = ({clickHandler}) =>
     return(
         <div className={classes.topContainer}>
             <FontAwesomeIcon onClick={handleClick} className={classes.burger} icon={faBars} />
-            <div className={classes.code}>Meny</div>
+            <div className={classes.code}>Menu</div>
         </div>
     )
 }
@@ -89,16 +89,16 @@ const SideMenu = () => {
             <SideMenuBurger clickHandler={handleClick}/>
             <div className={classes.sideMenu}>
             {/* <div className={classes.courseTitle}>Informationssystem B : Algoritmer och datastrukturer</div> */}
-            <SideMenuItem text="Hem"/>
-            <SideMenuItem text="Kursplan"/>
-            <SideMenuItem text="Schema"/>
-            <SideMenuItem text="Moduler"/>
-            <SideMenuItem text="Nyheter"/>
-            <SideMenuItem text="Personer"/>
-            <SideMenuItem text="Uppgifter"/>
-            <SideMenuItem text="Betyg"/>
-            <SideMenuItem text="Kursvärdering" isSelected={true}/>
-            <SideMenuItem text="Filer"/>
+            <SideMenuItem text="Home"/>
+            <SideMenuItem text="Syllabus"/>
+            <SideMenuItem text="Schedule"/>
+            <SideMenuItem text="Modules"/>
+            <SideMenuItem text="Announcements"/>
+            <SideMenuItem text="People"/>
+            <SideMenuItem text="Assignments"/>
+            <SideMenuItem text="Grades"/>
+            <SideMenuItem text="Course evaluation" isSelected={true}/>
+            <SideMenuItem text="Files"/>
             </div>
         </div>
         

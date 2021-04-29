@@ -67,16 +67,16 @@ const Sidebar = () => {
     return(
         <div className={classes.sidebar}>
             <Logo/>
-            <SidebarItem icon={faUserCircle} title="Konto"/>
-            <SidebarItem icon={faTachometerAlt} title="Översikt"/>
-            <SidebarItem isSelected={true} icon={faBook} title="Kurser"/>
-            <SidebarItem icon={faUserFriends} title="Grupper"/>
+            <SidebarItem icon={faUserCircle} title="Account"/>
+            <SidebarItem icon={faTachometerAlt} title="Dashboard"/>
+            <SidebarItem isSelected={true} icon={faBook} title="Courses"/>
+            <SidebarItem icon={faUserFriends} title="Groups"/>
 
-            <SidebarItem icon={faCalendarAlt} title="Kalender"/>
-            <SidebarItem icon={faInbox} title="Inkorg"/>
-            <SidebarItem icon={faClock} title="Historik"/>
+            <SidebarItem icon={faCalendarAlt} title="Calendar"/>
+            <SidebarItem icon={faInbox} title="Inbox"/>
+            <SidebarItem icon={faClock} title="History"/>
             <SidebarItem icon={faTv} title="Studio"/>
-            <SidebarItem icon={faQuestionCircle} title="Hjälp"/>
+            <SidebarItem icon={faQuestionCircle} title="Help"/>
 
         </div>
     )

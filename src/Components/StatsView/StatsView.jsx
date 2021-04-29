@@ -40,13 +40,13 @@ const StatsView = ({formData}) => {
                 <ThankYou/>
 
                 <div className={classes.title}>
-                    Resultat
+                    Results
                 </div>
 
                 <div className={classes.subTitle}>
-                Här uppdateras kontinuerligt svaren från den här kursens pågående kursvärdering.<br/>
-                I varje diagram nedan kan du se hur kursens deltagare har svarat hittills och med dina svar markerade i blå färg.
-                Kom gärna tillbaka när kursvärderingen är avslutad för att se det slutgiltiga resultatet.
+                Here, the answers from this course's ongoing course evaluation are continuously updated.
+                In each diagram below, you can see how the course participants have responded so far and with your answers marked in blue.
+                Feel free to come back when the course evaluation is completed to see the final result.
                 </div>
                 {formData[0].map((item)=>{
                     count++;
@@ -68,9 +68,9 @@ const StatsView = ({formData}) => {
                     })}
             <div className={classes.bottomInfo}>
                  
-                Du har nu kommit till slutet av testmiljön.<br/> När du känner dig färdig 
-                ber vi dig utvärdera detta verktyg med enkäten "AttrakDiff" genom att  <a href="https://esurvey.uid.com/survey/#5a3ad5a4-4760-4796-91b5-4231a60bbbaf">klicka här.</a>
-                  {" "}(Byt från tyska till engelska uppe i högra hörnet när du klickat på länken!)
+            You have now reached the end of the test environment.<br/> When you're done exploring
+                we ask you to evaluate this tool with the survey "AttrakDiff" by  <a href="https://esurvey.uid.com/survey/#5a3ad5a4-4760-4796-91b5-4231a60bbbaf">clicking here.</a>
+                  {" "}(Switch from German to English in the top right corner after clicking the link!)
                 </div>
         </div>
     )

@@ -11,25 +11,25 @@ const useStyles = createUseStyles({
 })
 
 const wordList = [
-    'stimulerande',
-    'problemlösning',
-    'analyserande',
-    'ämnesfördjupning',
-    'intellektuellt utmanande',
-    'tråkig',
-    'effektiv',
-    'onödig',
-    'aha-upplevelse',
-    'utantill-kunskap',
-    'engagerande',
-    'för svår',
-    'för lätt',
-    'intressant',
-    'spretig',
-    'tung',
-    'praktisk tillämpning',
-    'ineffektiv',
-    'nyttig'
+  'stimulating',
+  'problem solving',
+  'analysing',
+  'subject specialization',
+  'intellectually challenging',
+  'boring',
+  'effective',
+  'unnecessary',
+  'aha-moment',
+  'memorization oriented',
+  'engaging',
+  'too hard',
+  'too easy',
+  'interesting',
+  'unfocused',
+  'heavy',
+  'practical application',
+  'ineffective',
+  'useful'
 ]
 
 const data = [

@@ -98,7 +98,7 @@ const GenericInput = ({inputType, options, itemTitle, value,id,stateDisabled, st
     return(
         <div className={classes.genericInput}>
             <ItemTitle disabled ={stateDisabled} title={itemTitle}/>
-            <Disabler id={id} text="Avstå" isDisabled={stateDisabled}/>
+            <Disabler id={id} text="Abstain" isDisabled={stateDisabled}/>
             <Context.Consumer>
                 {
                     value =>

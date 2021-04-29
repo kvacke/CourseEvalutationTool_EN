@@ -106,11 +106,11 @@ export default function NewNavbar({clickHandler,index, formData}) {
       <div className={classes.demo2}>
         <StyledTabs value={index} onChange={handleChange}>
           
-          <StyledTab label={isStepComplete(0) ? getTextWithCheck("Kursen i stort") : 'Kursen i stort'}/>
-          <StyledTab label={isStepComplete(1) ? getTextWithCheck("Förutsättningar") : 'Förutsättningar'} />
-          <StyledTab label={isStepComplete(2) ? getTextWithCheck("Under kursen") : 'Under kursen'} />
-          <StyledTab label={isStepComplete(3) ? getTextWithCheck("Resultat") : 'Resultat'} />
-          <SendTab label="Skicka in" />
+          <StyledTab label={isStepComplete(0) ? getTextWithCheck("General") : 'General'}/>
+          <StyledTab label={isStepComplete(1) ? getTextWithCheck("Preconditions") : 'Preconditions'} />
+          <StyledTab label={isStepComplete(2) ? getTextWithCheck("During the course") : 'During the course'} />
+          <StyledTab label={isStepComplete(3) ? getTextWithCheck("Results") : 'Results'} />
+          <SendTab label="Submit" />
         </StyledTabs>
       </div>
   );
