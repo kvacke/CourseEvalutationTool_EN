@@ -11,22 +11,22 @@ const useStyles = createUseStyles({
 })
 
 const adaptedAgreeOptions = [
-  ["Instämmer", "inte alls"],
-  ["Instämmer", "i låg grad"],
-  ["Instämmer", "i viss grad"],
-  ["Instämmer", "i hög grad"],
-  ["Instämmer", "helt"]
+  ["Strongly", "disagree"],
+  ["Somewhat", "disagree"],
+  ["Neutral", " "],
+  ["Somewhat", "agree"],
+  ["Strongly", "agree"]
 ]
 
 const adaptedGrader = 
 [
-  "Inte alls", "I låg grad", "I viss grad", "I hög grad", "I mycket hög grad"
+  "Not at all", ["To a", "low degree"], "Some degree", "High degree", "Very high degree"
 ]
 
 
 const adaptedHurNöjd =
 [
-    "Mycket missnöjd", "Ganska missnöjd", ["Varken nöjd", "eller missnöjd"], "Ganska nöjd", "Mycket nöjd"
+    ["Very", "dissatisfied"], ["Somewhat", "dissatisfied"], ["Neither satisfied", "nor dissatisfied"], ["Somewhat", "satisfied"], ["Very", "satisfied"]
 ]
 
 
@@ -36,11 +36,11 @@ const getAdaptedOptions = (options) =>
 {
     switch(options[0])
     {
-      case "Instämmer inte alls":
+      case "Strongly disagree":
         return adaptedAgreeOptions
-      case "Mycket missnöjd":
+      case "Very dissatisfied":
         return adaptedHurNöjd
-      case "Inte alls":
+      case "Not at all":
         return adaptedGrader
       default:
         return ["oj","något","gick","fel","!"]
