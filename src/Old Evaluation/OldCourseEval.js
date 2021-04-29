@@ -78,20 +78,19 @@ const OldCourseEval = (props) => {
         kursvärderingen.
         <br />
         <br />
-        Dina synpunkter är värdefulla, och såväl positiva synpunkter som
-        konstruktiv och saklig kritik välkomnas. Eftersom kritiken ska vara
-        saklig och konstruktiv, undanbedes kränkande formuleringar om enskilda
-        personer.
+        Your views are valuable, and both positive and
+        constructive and factual criticism is welcome. Because the criticism should be
+        factual and constructive, offensive formulations about individuals are strictly prohibited.
       </div>
       <RadioButtonQuestion
         number={1}
-        question={"Hur nöjd är du med kursen i stort?"}
+        question={"How satisfied are you with the course in general?"}
         alternatives={[
-          "Mycket missnöjd",
-          "Ganska missnöjd",
-          "Varken nöjd eller missnöjd",
-          "Ganska nöjd",
-          "Mycket nöjd",
+          "Very dissatisfied",
+          "Somewhat dissatisfied",
+          "Neither satisfied nor dissatisfied",
+          "Somewhat satisfied",
+          "Very satisfied",
         ]}
         arrows={true}
         comment={true}
@@ -138,10 +137,10 @@ const OldCourseEval = (props) => {
           "Administrationen under kursen (schema, tentamensanmälen etc) har fungerat väl."
         }
         alternatives={[
-          "Instämmer inte alls",
-          "Instämmer i låg grad",
-          "Instämmer i viss grad",
-          "Instämmer i hög grad",
+          "Instämmer Not at all",
+          "Instämmer To a low degree",
+          "Instämmer To some degree",
+          "Instämmer To a high degree",
           "Instämmer helt",
         ]}
         arrows={true}
@@ -153,10 +152,10 @@ const OldCourseEval = (props) => {
           "Jag har överlag vetat vad som förväntas av mig i den här kursen i relation till kursmålen"
         }
         alternatives={[
-          "Instämmer inte alls",
-          "Instämmer i låg grad",
-          "Instämmer i viss grad",
-          "Instämmer i hög grad",
+          "Instämmer Not at all",
+          "Instämmer To a low degree",
+          "Instämmer To some degree",
+          "Instämmer To a high degree",
           "Instämmer helt",
         ]}
         arrows={true}
@@ -168,11 +167,11 @@ const OldCourseEval = (props) => {
           "I vilken grad har du haft svårigheter att följa med i kursen på grund av bristande förkunskaper?"
         }
         alternatives={[
-          "Inte alls",
-          "I låg grad",
-          "I viss grad",
-          "I hög grad",
-          "I mycket hög grad",
+          "Not at all",
+          "To a low degree",
+          "To some degree",
+          "To a high degree",
+          "To a very high degree",
         ]}
         arrows={true}
         comment={true}
@@ -183,10 +182,10 @@ const OldCourseEval = (props) => {
           "Jag anser att kursens krav på arbetsinsats motsvarar antalet kurspoäng"
         }
         alternatives={[
-          "Instämmer inte alls",
-          "Instämmer i låg grad",
-          "Instämmer i viss grad",
-          "Instämmer i hög grad",
+          "Instämmer Not at all",
+          "Instämmer To a low degree",
+          "Instämmer To some degree",
+          "Instämmer To a high degree",
           "Instämmer helt",
         ]}
         arrows={true}
@@ -196,10 +195,10 @@ const OldCourseEval = (props) => {
         number={9}
         question={"Studierna på kursen har varit intellektuellt utmananade"}
         alternatives={[
-          "Instämmer inte alls",
-          "Instämmer i låg grad",
-          "Instämmer i viss grad",
-          "Instämmer i hög grad",
+          "Instämmer Not at all",
+          "Instämmer To a low degree",
+          "Instämmer To some degree",
+          "Instämmer To a high degree",
           "Instämmer helt",
         ]}
         arrows={true}
@@ -211,11 +210,11 @@ const OldCourseEval = (props) => {
           "Läraren/-na har varit bra på att förklara kursinnehåll som varit svårt att förstå i kursen"
         }
         alternatives={[
-          "Inte alls",
-          "I låg grad",
-          "I viss grad",
-          "I hög grad",
-          "I mycket hög grad",
+          "Not at all",
+          "To a low degree",
+          "To some degree",
+          "To a high degree",
+          "To a very high degree",
         ]}
         arrows={true}
         comment={true}
@@ -224,11 +223,11 @@ const OldCourseEval = (props) => {
         number={11}
         question={"Hur nöjd är du med din egen arbetsinsats på kursen?"}
         alternatives={[
-          "Mycket missnöjd",
-          "Ganska missnöjd",
-          "Varken nöjd eller missnöjd",
-          "Ganska nöjd",
-          "Mycket nöjd",
+          "Very dissatisfied",
+          "Somewhat dissatisfied",
+          "Neither satisfied nor dissatisfied",
+          "Somewhat satisfied",
+          "Very satisfied",
         ]}
         arrows={true}
         comment={true}
@@ -239,11 +238,11 @@ const OldCourseEval = (props) => {
           "I vilken grad har studierna inom kursen bidragit till att utveckla din förmåga gällande att läsa och förstå vetenskapliga texter?"
         }
         alternatives={[
-          "Inte alls",
-          "I låg grad",
-          "I viss grad",
-          "I hög grad",
-          "I mycket hög grad",
+          "Not at all",
+          "To a low degree",
+          "To some degree",
+          "To a high degree",
+          "To a very high degree",
         ]}
         arrows={true}
         comment={true}
@@ -254,11 +253,11 @@ const OldCourseEval = (props) => {
           "I vilken grad har studierna inom kursen bidragit till att utveckla din förmåga gällande att arbeta i grupp/samarbeta med andra?"
         }
         alternatives={[
-          "Inte alls",
-          "I låg grad",
-          "I viss grad",
-          "I hög grad",
-          "I mycket hög grad",
+          "Not at all",
+          "To a low degree",
+          "To some degree",
+          "To a high degree",
+          "To a very high degree",
         ]}
         arrows={true}
         comment={true}
@@ -269,11 +268,11 @@ const OldCourseEval = (props) => {
           "I vilken grad har kursen byggt vidare på det du tidigare har lärt dig i ämnet?"
         }
         alternatives={[
-          "Inte alls",
-          "I låg grad",
-          "I viss grad",
-          "I hög grad",
-          "I mycket hög grad",
+          "Not at all",
+          "To a low degree",
+          "To some degree",
+          "To a high degree",
+          "To a very high degree",
         ]}
         arrows={true}
         comment={true}
