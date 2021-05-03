@@ -25,14 +25,14 @@ const useStyles = createUseStyles({
 })
 
 const data2= [
-    "'Bra upplägg, fullt upp men det fanns tid för allt som behövdes göras. Interaktiva föreläsningar var jättebra. Skönt med förinspelade föreläsningar så man kunde planera sin egen tid.'"
-    , "'Mycket fritt arbete. Får själv ta tag i och lösa problem. Man får luta sig mot det som vi lärt oss tidigare under programmet'",
-    "'Jag tycker att det har varit bra lärare, som har gjort bra övningsuppgifter och laborationer på en lagom nivå. Kul och lärorik kurs :) Bland de bättre kurser jag har läst om jag ska vara ärlig :)'"
+    "'A well planned course. I always had something challenging to do without it taking more than full time. Kudos!'"
+    , "'I really liked the structure of the assignments on this course. Having to find the solution completely by myself was an amazing way for me to learn and prepares me for real life assignments.'",
+    "'The guest lectures were really great!'"
 ]
 
 const data = [
-    "'Det är alltid (för mig åtminstone) en nackdel att ha undervisande lärare på annan ort. Detta gör det svårt att få den hjälp som vissa kan behöva.'",
-    "'En sak som skulle förbättrat min inlärning är om kursens upplägg i högre grad uppmuntrade till verbaliserande av det inlärda, främst muntligen. Men jag anser att det i hög grad är upp till mig själv att ordna detta även om kursupplägget kunde varit mer gynnsamt.'",
+    "'Unfortunately, the feedback on the labs was not up to standard.'",
+    "'I feel like the two first labs on the course are outdated and perhaps not relevant anymore.'",
 ]
 
 const TextCard = ({text}) =>
@@ -47,7 +47,7 @@ const TextCard = ({text}) =>
 
 const getTextCards = (_title) =>{
     var arr = []
-    if(_title=== "Det här kan förbättras med kursen:")
+    if(_title=== "The course can be improved in the following ways:")
     {
         {data.forEach(item => {
             arr.push(<TextCard text={item}/>)
