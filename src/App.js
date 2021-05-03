@@ -53,11 +53,11 @@ function App() {
         <div className={classes.mobileView}>
           <div className={classes.uhoh}>Uh oh!</div>
           <div className={classes.mobileInfo}>
-            Detta arbete hanterar inte mobilvy på grund av tidsbegränsning.
-            Vänligen besök samma länk på en laptop eller stationär dator.
+            Mobile view is unfortunately not within this project's scope.
+            Please revisit this URL on a laptop or desktop computer.
           </div>
 
-          <div className={classes.signoff}>Mvh Viktor och Jens </div>
+          <div className={classes.signoff}>Thanks, Viktor och Jens </div>
         </div>
       )}
     </div>
